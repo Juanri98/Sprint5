@@ -31,12 +31,12 @@ public class UsuarioController {
 	public List<Usuario> getUsuarios(){
 		return this.usuarioService.getUsuarios();
 	}
-	
+
 	@RequestMapping(value = "/registrar", method = RequestMethod.POST)
 	private Usuario addUsuario(@RequestBody Usuario usuario) {
-		return this.usuarioService.registrar(usuario);
+		return this.usuarioService.addUsuario(usuario);
 	}
-	
+
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	private UsuarioUtil login(@RequestBody Usuario usuario) {
 		Usuario u = this.usuarioService.login(usuario); 

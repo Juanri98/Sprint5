@@ -13,6 +13,6 @@ public interface UsuarioService {
 	Usuario addUsuario(Usuario usuario);
 	Usuario editUsuario(Usuario usuario);
 	void deleteUsuario(Integer id);
-	Usuario registrar(Usuario usuario);
+
 	Usuario login(Usuario usuario);
 }
