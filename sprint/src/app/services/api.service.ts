@@ -9,7 +9,7 @@ import { Usuario } from '../Interfaces/usuarios.interface';
 })
 export class ApiService {
 
-  url:string = "http://localhost:8080/"
+  url:string = "https://spring-tl-demo.herokuapp.com/"
 
   constructor(private httpClient:HttpClient, private sesionService:SesionService) { }
 
